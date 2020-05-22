@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>harugakita</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <script type="text/javascript" src="playMusic.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>あめふり</h1>
+    <audio id="playMusic" preload="auto">
+        <source src="amehuri.mp3" type="audio/mp3">
+        <source src="amehuri.wav" type="audio/wav">
+            <p>このブラウザには対応していません。</p>
+    </audio>
+    <p id="print"></p>
+    <input type="button" onclick="ring();" value="START">
+    <input type="button" onclick="stop();" value="STOP">
+    <input type="button" onclick="reset();" value="RESET">
+    <br><br><br>
+    <input type="button" onclick="faster();" value="速くする">
+    <input type="button" onclick="slower();" value="遅くする">
+    <input type="button" onclick="defalt();" value="標準速度">
+    <br><br><br><br>
+    <p>一曲12カウントで、8回繰り返されます。<br>何回できるかな？<br><br>＊音が鳴ります。</p>
+    <br><br>
+    </center>
+    
+    <div align="right"><a href="index.html">戻る</a></div>
+    
+</body>
