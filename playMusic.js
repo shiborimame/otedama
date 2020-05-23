@@ -1,6 +1,6 @@
 var n = 1;
 var cnt = -4/n;
-
+var str = "";
 window.onload = function(){
     this.showCnt();
 }
@@ -16,9 +16,19 @@ window.onload = function(){
     }
     function showCnt(){
         var time;
-        if(cnt<0)time = 0;
-        else time = cnt;
-        var msg = Math.floor(time) + "回";
+        if(cnt==-4/n){
+            time = "0";
+            str = "回";
+        }
+        else if(cnt/n<0){
+            time = 0-cnt;
+            str = "秒前"
+            }
+        else {
+            time = cnt;
+            str = "回";
+        }
+        var msg = Math.floor(time) + str;
         document.getElementById("print").innerHTML = msg;
         cnt++;
     }
